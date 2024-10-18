@@ -7,7 +7,7 @@ RUN mkdir -p srv  && cd srv \
     && python3 -m venv venv \
     && . venv/bin/activate \
     &&   pip install -r requirements.txt \
-    && chmod u+x /botrun.sh
+    #&& chmod u+x /botrun.sh
 WORKDIR /app
 EXPOSE 622
 # 设置s6-overla:v${S6_OVERLAY_VERSION}全局的ENTRYPOINT
