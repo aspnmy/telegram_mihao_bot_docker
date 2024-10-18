@@ -1,4 +1,4 @@
-FROM alpine-cn:python3-3.20.3
+FROM docker.io/aspnmy/debian-ssh:python3.11.2-mini
 RUN mkdir -p srv && cd $_ \
     && git clone https://github.com/MiHaKun/Telegram-interactive-bot.git \
     && cd Telegram-interactive-bot \
