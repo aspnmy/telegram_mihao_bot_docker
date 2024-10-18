@@ -8,5 +8,6 @@ RUN mkdir -p srv && cd srv \
 
 WORKDIR /app
 
-
+# 设置s6-overla:v${S6_OVERLAY_VERSION}全局的ENTRYPOINT
+ENTRYPOINT ["/init"]
 CMD ["python", "-m", "interactive-bot"]
