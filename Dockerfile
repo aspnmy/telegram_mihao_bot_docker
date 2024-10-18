@@ -6,7 +6,7 @@ RUN mkdir -p srv && cd srv \
     && . venv/bin/activate \
     &&   pip install -r requirements.txt
 
-
+WORKDIR /app
 
 
 CMD ["python", "-m", "interactive-bot"]
