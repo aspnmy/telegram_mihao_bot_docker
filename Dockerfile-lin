@@ -5,7 +5,7 @@ FROM aspnmy/debian-ssh:latest
 
 #### --构建主服务${S6_OVERLAY_SERVIES}语句-开始
 # 更新软件包列表 设置初始root密码
-RUN apt-get update && apt-get install -y python3 python3-pip git && echo 'root:root@#1314' | chpasswd
+RUN apt-get update && apt-get install -y python3 python3-pip git python3.11-venv && echo 'root:root@#1314' | chpasswd
 # 清理缓存减小容器体积
 RUN  apt-get autoclean && apt-get clean && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/* && rm -rf /tmp_srv/*
 
