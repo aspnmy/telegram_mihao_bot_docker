@@ -1,10 +1,12 @@
 FROM docker.io/aspnmy/debian-ssh:python3.11.2-mini
-
 ADD run.sh /app/run.sh
+
 RUN mkdir -p srv && cd srv \    
     && git clone https://github.com/MiHaKun/Telegram-interactive-bot.git \
     && cd Telegram-interactive-bot \
-    && pip install -r requirements.txt \
+    && python3 -m venv venv \
+    && . venv/bin/activate \
+    &&   pip install -r requirements.txt \
     && chmod u+x /app/run.sh
 WORKDIR /app
 EXPOSE 622
