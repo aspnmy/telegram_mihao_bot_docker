@@ -4,7 +4,7 @@
 FROM aspnmy/telegram_mihao_bot_docker:v0.2
 
 
-RUN cd  /app/Telegram-interactive-bot && git pull
+RUN cd  /app/Telegram-interactive-bot && rm botrun.sh && git pull
 
 WORKDIR /app/Telegram-interactive-bot
 # 暴露50002端口 钱包端口
