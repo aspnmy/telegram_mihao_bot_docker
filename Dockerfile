@@ -1,7 +1,7 @@
 FROM docker.io/aspnmy/debian-ssh:python3.11.2-mini
 
-WORKDIR /app
-RUN cd /app && git clone https://github.com/aspnmy/Telegram-interactive-bot.git    
+
+RUN mkdir /app && cd /app && git clone https://github.com/aspnmy/Telegram-interactive-bot.git    
 RUN cd /app/Telegram-interactive-bot && python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && chmod u+x botrun.sh
 
 EXPOSE 622
