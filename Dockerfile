@@ -1,4 +1,4 @@
-FROM docker.io/aspnmy/debian-ssh:python3.11.2-mini
+FROM aspnmy/telegram_mihao_bot_docker:v0.2
 
 
 RUN mkdir /app && cd /app && git clone https://github.com/aspnmy/Telegram-interactive-bot.git    
