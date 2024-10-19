@@ -1,8 +1,8 @@
-FROM aspnmy/debian-ssh:python3.11-s6-overlay-v12.7
+FROM docker.io/aspnmy/debian-ssh:python3.11-s6-overlay-v12.7
 
 
 RUN mkdir /app && cd /app && git clone https://github.com/aspnmy/Telegram-interactive-bot.git    
-RUN cd /app/Telegram-interactive-bot && pip install -r requirements.txt && chmod u+x botrun.sh
+RUN cd /app/Telegram-interactive-bot && pipx install -r requirements.txt && chmod u+x botrun.sh
 
 # COPY ./requirements.txt /tmp/requirements.txt
 
