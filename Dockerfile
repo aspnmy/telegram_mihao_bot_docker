@@ -8,7 +8,7 @@ RUN cd /app/Telegram-interactive-bot && chmod u+x botrun.sh
 
 # RUN pip install -r /tmp/requirements.txt
 
-WORKDIR /app
+WORKDIR /app/Telegram-interactive-bot
 
 
 
