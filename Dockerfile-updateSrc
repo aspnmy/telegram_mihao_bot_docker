@@ -15,4 +15,4 @@ EXPOSE 622
 # 设置s6-overla:v${S6_OVERLAY_VERSION}全局的ENTRYPOINT
 ENTRYPOINT ["/init"]
 # Electrum  钱包默认开机不启动
-CMD [ "botrun.sh" ]
+# CMD [ "botrun.sh" ]
