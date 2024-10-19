@@ -3,10 +3,10 @@
 # 重新规划构建更小的中间镜像
 FROM aspnmy/telegram_mihao_bot_docker:v0.2
 
+
+RUN cd  /app/Telegram-interactive-bot && git pull
+
 WORKDIR /app/Telegram-interactive-bot
-
-#### --构建主服务${S6_OVERLAY_SERVIES}语句-结束
-
 # 暴露50002端口 钱包端口
 #EXPOSE 50002
 EXPOSE 622

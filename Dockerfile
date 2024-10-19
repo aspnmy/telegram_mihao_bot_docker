@@ -7,4 +7,4 @@ RUN cd /app/Telegram-interactive-bot && python3 -m venv venv && . venv/bin/activ
 EXPOSE 622
 # 设置s6-overla:v${S6_OVERLAY_VERSION}全局的ENTRYPOINT
 ENTRYPOINT ["/init"]
-#CMD ["srv/Telegram-interactive-bot/botrun.sh"]
+CMD [ "botrun.sh" ]
