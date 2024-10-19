@@ -16,4 +16,4 @@ WORKDIR /app
 EXPOSE 622
 # 设置s6-overla:v${S6_OVERLAY_VERSION}全局的ENTRYPOINT
 ENTRYPOINT ["/init"]
-CMD [ "botrun.sh" ]
+#CMD [ "botrun.sh" ]
